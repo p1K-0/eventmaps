@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;..");
+
+body {
+  background-color: aliceblue;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.header {
+  background-color: #759474;
+  height: 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.header-title {
+  color: #fff;
+  font-size: 36px !important;
+}
+
+.active {
+  background-color: #fff !important;
+  color: #759474 !important;
+  font-weight: bold !important;
+  border-radius: 10px !important;
+  width: 120px;
+  height: 50px;
+  font-size: 24px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Monserrat", "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  font-weight: 500 !important;
+}
+
+.active:hover {
+  color: #566d56 !important;
+  background-color: #edfded !important;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, "Monserrat", "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 200;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:hover {
+  color: #3d4d3d;
+}
+
+h2.form-header {
+  margin-top: -15px;
+  font-size: 40px;
+  text-align: center;
+  color: #759474;
+}
+
+.reg .form-header {
+  margin-top: -20px;
+  font-size: 40px;
+  text-align: center;
+  color: #759474;
+}
+
+h5.description {
+  margin-top: -95px;
+  margin-left: 20px;
+  text-align: left;
+  font-size: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, "Monserrat", "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 200;
+}
+
+.auth,
+.reg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 200px);
+}
+
+.container {
+  flex-wrap: wrap;
+  box-shadow: 0 1px 10px rgba(139, 139, 139, 0.5);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 70px;
+  width: 25%;
+  height: 60vh;
+  background-color: #fff;
+}
+
+.reg .container {
+  height: 80vh;
+}
+.form-auth {
+  margin-top: -90px;
+}
+
+.auth-wrapper {
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+}
+
+h5.input-header {
+  text-align: left;
+  font-size: 23px;
+  color: #566d56;
+  font-family: -apple-system, BlinkMacSystemFont, "Monserrat", "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+}
+
+input {
+  font-style: italic;
+  text-align: center;
+  font-size: 100%;
+  padding: 8px 40px;
+  border: 1.5px solid #759474;
+  border-radius: 5px;
+  width: 400px;
+}
+
+#passwordInput {
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.password-reset {
+  margin-bottom: -33px;
+  text-align: right;
+  color: #63468a;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Monserrat", "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.password-reset:hover {
+  color: #b9007b;
+}
+
+.auth-btn {
+  margin-top: 20px;
+  background: #759474;
+  border-radius: 5px;
+  border-style: none;
+  width: 400px;
+  height: 43px;
+  color: #fff;
+  font-size: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, "Monserrat", "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-bottom: 5px;
+}
+
+.reg .auth-btn {
+  margin-top: 35px;
+}
+
+.signUp > h5 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, "Monserrat", "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+}
+
+.auth-link {
+  color: #63468a;
+  text-decoration: none;
+  font-size: 23px;
+  font-family: -apple-system, BlinkMacSystemFont, "Monserrat", "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.auth-link:hover {
+  color: #b9007b;
+}
+
+.reg .input--active {
+  margin-top: 20px;
+}
+
+.signin-form {
+  margin-top: -100px;
+}

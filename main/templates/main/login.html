@@ -1,0 +1,42 @@
+{% extends 'main/base.html' %} {% block title %} Авторизация {% endblock %}
+{%block content %} {% if form.errors %}
+<p>Неверное имя пользователя или пароль! Попробуйте ещё раз.</p>
+{% endif %}
+
+<section class="auth" id="auth-page">
+  <!-- <div class="auth-header"> -->
+
+  <!-- </div> -->
+  <div class="container auth-container">
+    <h2 class="form-header"><b>EventMap</b></h2>
+    <h5 class="description">
+      Пожалуйста, войдите в свой аккаунт и начните работу
+    </h5>
+    <form action="{% url 'login' %}" method="post" class="form-auth">
+      {% csrf_token %}
+      <div class="auth-wrapper">
+        <div class="auth-image">
+          <a href="{% url 'home' %}" class="logo-link"> </a>
+        </div>
+        <div class="input-wrapper input--active" id="signInInput">
+          <h5 class="input-header">Логин</h5>
+          {{ form.username }}
+        </div>
+
+        <div class="input-wrapper input--active" id="passwordInput">
+          <a href="#" class="password-reset">Забыли пароль?</a>
+          <h5 class="input-header">Пароль</h5>
+          {{ form.password }}
+        </div>
+
+        <button type="submit" class="auth-btn" id="signInBtn">Войти</button>
+        <input type="hidden" name="next" value="{{ next }}" />
+        <div class="signUp">
+          <h5>Ещё не зарегистрированы?</h5>
+          <a href="#" class="auth-link">Зарегистрируйтесь</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+{% endblock %}
